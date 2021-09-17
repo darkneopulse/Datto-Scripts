@@ -24,7 +24,7 @@ elseif ($RunningAV -eq $Null) {
         "397312" {$UpdateStatus = "true" ;$RealTimeProtectionStatus = "true"} 
         "397328" {$UpdateStatus = "false" ;$RealTimeProtectionStatus = "true"} 
         "397584" {$UpdateStatus = "false" ;$RealTimeProtectionStatus = "true"} 
-        "397568" {$UpdateStatus = "true"; $RealTimeProtectionStatus = "true"}
+        "397568" {$UpdateStatus = "true" ;$RealTimeProtectionStatus = "true"}
         "393472" {$UpdateStatus = "true" ;$RealTimeProtectionStatus = "false"}
     default {$UpdateStatus = "Unknown" ;$RealTimeProtectionStatus = "Unknown"} 
     }
