@@ -3,7 +3,7 @@
 # Created by Darkneopulse
 
 $Antivirus = Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
-$RunningAV = $Antivirus | where-object {$_.productstate -eq "397568"}
+$RunningAV = $Antivirus | where-object {($_.productstate -eq "397568") -or ($_.productstate -eq "266240") -or ($_.productstate -eq "397312")}
 if ($RunningAV -ne $Null) {
     $FirstAV = $RunningAV | select-object -First 1
     $AVName = $FirstAV.displayName
